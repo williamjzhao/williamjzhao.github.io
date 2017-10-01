@@ -16,7 +16,7 @@ console.log("Bar is now: " + bar); // should be 3
 console.log(foo + '*' + bar + '=' +(foo*bar));
 
 // now you do division!
-console.log(foo + '*' + bar + '=' +('ADD A DIVISION EXPRESSION HERE'));
+console.log(foo + '/' + bar + '=' +(foo/bar));
 
 
 
@@ -25,23 +25,26 @@ function squareNumber(number){ // square a number
     return Math.pow(number,2); // return is what the function ends up being
 }
 
+squareNumber(foo);
 console.log(squareNumber(bar)); // should be 9
-
 
 function printSquareNumber(number){ // calls square number and prints the results
     console.log(squareNumber(number)); // no return necessary
 }
 
-
-
+printSquareNumber(13);
 // call printSquareNumber
 
 function cubeNumber(number){
-    //write this with a return statement (like squareNumber)
+    return Math.pow(number,3);
 }
 
+console.log(cubeNumber(bar));
+
 function printCubeNumber(number){
-    // write this with a console.log() statement!
+    console.log(cubeNumber(number));
 }
+
+printCubeNumber(7);
 
 

@@ -22,7 +22,7 @@
             
                 <br>
                 <p>Get a picture taken by a Mars Rover on this date</p>
-                <input id="date" placeholder="YYYY-MM-DD" id="date">
+                <input id="date" placeholder="YYYY-MM-DD">
                 <select id="camera">
                     <option value="" disabled selected>Camera</option>                        
                     <option value='fhaz'>fhaz</option>
@@ -31,15 +31,15 @@
                     <!-- need more options-->
                   
                 </select>
-                <button>Get Pic</button>
-
+                <button onclick="getNasaPhoto()">Get Pic</button>
+                    
                 <br>
                 <br>
 
                 <p>Text the picture to a number</p>                
                 <input placeholder="What number?" id="phone">
                 <input placeholder="Text content" id="text-content">
-                <button id="send-text" disabled>Text photo</button>
+                <button onclick="textNasaPhoto()" id="send-text" disabled>Text photo</button>
         </div>
         <!-- End left half -->
 
